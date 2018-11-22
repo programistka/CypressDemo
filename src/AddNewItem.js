@@ -19,11 +19,13 @@ class AddNewItem extends Component {
             <form className="form-inline">
                 <input
                     type="text"
+                    name="addTodoInput"
                     className="form-control mb-2 mr-sm-2 w-50"
                     onChange={this.handleChange}
                     value={this.state.toDoItem}
                 />
                 <button
+                    name="addTodoButton"
                     className="btn btn-primary mb-2"
                     onClick={this.handleSubmit}
                     disabled={!this.state.toDoItem}
